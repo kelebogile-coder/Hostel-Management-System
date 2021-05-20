@@ -49,6 +49,7 @@ $stmt=$mysqli->prepare("SELECT username,email,password,id FROM admin WHERE (user
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 	<link rel="stylesheet" href="css/style.css">
 </head
+
 <body>
 
 	<div class="login-page bk-img" style="background-image: url(img/login-bg.jpg);">

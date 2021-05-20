@@ -43,7 +43,7 @@ $query1="insert into  userregistration(regNo,firstName,middleName,lastName,gende
 $stmt1= $mysqli->prepare($query1);
 $stmt1->bind_param('sssssiss',$regno,$fname,$mname,$lname,$gender,$contactno,$emailid,$contactno);
 $stmt1->execute();
-echo"<script>alert('Student Succssfully register');</script>";
+echo"<script>alert('Student Successfully register');</script>";
 }
 ?>
 
@@ -144,20 +144,20 @@ while($row=$res->fetch_object())
 </div>
 </div>
 
-<!-- <div class="form-group">
+<div class="form-group">
 <label class="col-sm-2 control-label">Fees Per Month</label>
 <div class="col-sm-8">
 <input type="text" name="fpm" id="fpm"  class="form-control" >
 </div>
-</div> -->
+</div>
 
-<!-- <div class="form-group">
+<div class="form-group">
 <label class="col-sm-2 control-label">Food Status</label>
 <div class="col-sm-8">
 <input type="radio" value="0" name="foodstatus" checked="checked"> Without Food
 <input type="radio" value="1" name="foodstatus"> With Food(Rs 2000.00 Per Month Extra)
 </div>
-</div>	 -->
+</div>	
 
 <div class="form-group">
 <label class="col-sm-2 control-label">Stay From</label>
@@ -167,13 +167,22 @@ while($row=$res->fetch_object())
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Semester</label>
+<label class="col-sm-2 control-label">Duration</label>
 <div class="col-sm-8">
 <select name="duration" id="duration" class="form-control">
-<option value="">Select semester</option>
+<option value="">Select Duration in Month</option>
 <option value="1">1</option>
 <option value="2">2</option>
-
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
 </select>
 </div>
 </div>

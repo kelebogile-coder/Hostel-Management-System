@@ -89,7 +89,7 @@ $stmt=$mysqli->prepare("SELECT username,email,password,id FROM admin WHERE (user
 </body>
 
 <div class="foot"><footer>
-<p> Brought To You By <a href="https://code-projects.org/">Code-Projects</p>
+<p> Brought To You By <a href="https://code-projects.org/">Kelebogile</p>
 </footer> </div>
 
 

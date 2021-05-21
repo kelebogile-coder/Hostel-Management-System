@@ -7,13 +7,13 @@ check_login();
 if($_POST['submit'])
 {
 $roomno=$_POST['room'];
-$seater=$_POST['seater'];
-$feespm=$_POST['fpm'];
-$foodstatus=$_POST['foodstatus'];
+// $seater=$_POST['seater'];
+// $feespm=$_POST['fpm'];
+// $foodstatus=$_POST['foodstatus'];
 $stayfrom=$_POST['stayf'];
-$duration=$_POST['duration'];
+$duration=$_POST['Semester'];
 $course=$_POST['course'];
-$regno=$_POST['regno'];
+$regno=$_POST['Student ID'];
 $fname=$_POST['fname'];
 $mname=$_POST['mname'];
 $lname=$_POST['lname'];
@@ -27,7 +27,7 @@ $gurcntno=$_POST['gcontact'];
 $caddress=$_POST['address'];
 $ccity=$_POST['city'];
 $cstate=$_POST['state'];
-$cpincode=$_POST['pincode'];
+// $cpincode=$_POST['pincode'];
 $paddress=$_POST['paddress'];
 $pcity=$_POST['pcity'];
 $pstate=$_POST['pstate'];
@@ -144,20 +144,20 @@ while($row=$res->fetch_object())
 </div>
 </div>
 
-<div class="form-group">
+<!-- <div class="form-group">
 <label class="col-sm-2 control-label">Fees Per Month</label>
 <div class="col-sm-8">
 <input type="text" name="fpm" id="fpm"  class="form-control" >
 </div>
-</div>
+</div> -->
 
-<div class="form-group">
+<!-- <div class="form-group">
 <label class="col-sm-2 control-label">Food Status</label>
 <div class="col-sm-8">
 <input type="radio" value="0" name="foodstatus" checked="checked"> Without Food
 <input type="radio" value="1" name="foodstatus"> With Food(Rs 2000.00 Per Month Extra)
 </div>
-</div>	
+</div>	 -->
 
 <div class="form-group">
 <label class="col-sm-2 control-label">Stay From</label>
@@ -167,13 +167,13 @@ while($row=$res->fetch_object())
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Duration</label>
+<label class="col-sm-2 control-label">Semester</label>
 <div class="col-sm-8">
 <select name="duration" id="duration" class="form-control">
-<option value="">Select Duration in Month</option>
+<option value="">Select Semester</option>
 <option value="1">1</option>
 <option value="2">2</option>
-<option value="3">3</option>
+<!-- <option value="3">3</option>
 <option value="4">4</option>
 <option value="5">5</option>
 <option value="6">6</option>
@@ -182,7 +182,7 @@ while($row=$res->fetch_object())
 <option value="9">9</option>
 <option value="10">10</option>
 <option value="11">11</option>
-<option value="12">12</option>
+<option value="12">12</option> -->
 </select>
 </div>
 </div>
@@ -193,7 +193,7 @@ while($row=$res->fetch_object())
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">course </label>
+<label class="col-sm-2 control-label">Course </label>
 <div class="col-sm-8">
 <select name="course" id="course" class="form-control" required> 
 <option value="">Select Course</option>
@@ -210,7 +210,7 @@ while($row=$res->fetch_object())
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Registration No : </label>
+<label class="col-sm-2 control-label">Student No : </label>
 <div class="col-sm-8">
 <input type="text" name="regno" id="regno"  class="form-control" required="required" >
 </div>
@@ -329,12 +329,12 @@ while($row=$res->fetch_object())
 </select> </div>
 </div>							
 
-<div class="form-group">
+<!-- <div class="form-group">
 <label class="col-sm-2 control-label">Pincode : </label>
 <div class="col-sm-8">
 <input type="text" name="pincode" id="pincode"  class="form-control" required="required">
 </div>
-</div>	
+</div>	 -->
 
 <div class="form-group">
 <label class="col-sm-3 control-label"><h4 style="color: green" align="left">Permanent Address </h4> </label>

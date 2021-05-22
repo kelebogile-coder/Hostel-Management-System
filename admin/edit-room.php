@@ -81,12 +81,12 @@ echo"<script>alert('Room Details has been Updated successfully');</script>";
 													Room no can't be changed.</span>
 						 </div>
 						</div>
-<div class="form-group">
+<!-- <div class="form-group">
 									<label class="col-sm-2 control-label">Fees (PM) </label>
 									<div class="col-sm-8">
 									<input type="text" class="form-control" name="fees" value="<?php echo $row->fees;?>" >
 												</div>
-											</div>
+											</div> -->
 
 
 <?php } ?>

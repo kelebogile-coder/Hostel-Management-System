@@ -82,11 +82,11 @@ while($row=$res->fetch_object())
 <td><?php echo $row->roomno;?></td>
 <td><b>Seater :</b></td>
 <td><?php echo $row->seater;?></td>
-<td><b>Fees PM :</b></td>
-<td><?php echo $fpm=$row->feespm;?></td>
+<!-- <td><b>Fees PM :</b></td>
+<td><?php echo $fpm=$row->feespm;?></td> -->
 </tr>
 
-<tr>
+<!-- <tr>
 <td><b>Food Status:</b></td>
 <td>
 <?php if($row->foodstatus==0)
@@ -97,14 +97,14 @@ else
 {
 echo "With Food";
 }
-;?></td>
+;?></td> -->
 <td><b>Stay From :</b></td>
 <td><?php echo $row->stayfrom;?></td>
 <td><b>Duration:</b></td>
 <td><?php echo $dr=$row->duration;?> Months</td>
 </tr>
 
-<tr>
+<!-- <tr>
 <td colspan="6"><b>Total Fee : 
 <?php if($row->foodstatus==1)
 { 
@@ -116,7 +116,7 @@ else
 echo $dr*$fpm;
 }
 ?></b></td>
-</tr>
+</tr> -->
 <tr>
 <td colspan="6"><h4>Personal Info Info</h4></td>
 </tr>
@@ -162,7 +162,7 @@ echo $dr*$fpm;
 <td><b>Correspondense Address</b></td>
 <td colspan="2">
 <?php echo $row->corresAddress;?><br />
-<?php echo $row->corresCIty;?>, <?php echo $row->corresPincode;?><br />
+<!-- <?php echo $row->corresCIty;?>, <?php echo $row->corresPincode;?><br /> -->
 <?php echo $row->corresState;?>
 
 
@@ -170,7 +170,7 @@ echo $dr*$fpm;
 <td><b>Permanent Address</b></td>
 <td colspan="2">
 <?php echo $row->pmntAddress;?><br />
-<?php echo $row->pmntCity;?>, <?php echo $row->pmntPincode;?><br />
+<!-- <?php echo $row->pmntCity;?>, <?php echo $row->pmntPincode;?><br /> -->
 <?php echo $row->pmnatetState;?>	
 
 </td>
